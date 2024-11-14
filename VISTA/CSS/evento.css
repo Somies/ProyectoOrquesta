@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Spicy+Rice&display=swap');
+.cuerpo{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+/*titulo*/
+.sub1cuerpo0 {
+    width: 100%;
+    height: 150px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro1cuerpo0 {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro1cuerpo0 p{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/*eventos*/
+.sub1cuerpo1 {
+    width: 100%;
+    height: 300px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadro1cuerpo1 {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    background: #4c4949;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.cuadro1cuerpo1 .testimonial-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.cuadro1cuerpo1 .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Ajustes para los botones de navegación y paginación */
+.cuadro1cuerpo1 .swiper-button-prev,
+.cuadro1cuerpo1 .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.cuadro1cuerpo1 .swiper-button-prev {
+    left: 10px;
+}
+
+.cuadro1cuerpo1 .swiper-button-next {
+    right: 10px;
+}
+
+.cuadro1cuerpo1 .swiper-pagination {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    z-index: 10;
+}
+
+/* Ajustes adicionales */
+.cuadro1cuerpo1 .container-comment-slider {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cuadro1cuerpo1 .card-title {
+    transform: translateY(-11px);
+    font-size: 15px;
+}
+
+.cuadro1cuerpo1 .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+
+.cuadro1cuerpo1 .image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cuadro1cuerpo1 .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro1cuerpo1 .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cuadro1cuerpo1 .card-image {
+    margin-bottom: 10px;
+}
+
+.card-item img{
+    border-radius: 130px;
+    width: 200px;
+    height: 200px;
+}
+
+.card-item p{
+    font-size: 30px;
+}
+
+/*fecha*/
+.sub1cuerpo2{
+    width: 100%;
+    height: 230px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro1cuerpo2 {
+    width: 100%;
+    max-width: 1920px;
+    height: 70%;
+    background: #777777;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.date-group {
+    display: flex;
+    flex-direction: column;
+}
+.date-group input{
+    border: none;
+    border-radius: 10px;
+    width: 230px;
+    height: 60px;
+}
+
+.date-group label {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.search-button {
+    width: 230px;
+    height: 60px;
+    padding: 5px 15px;
+    font-size: 26px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/*Cumpleaños*/
+.sub1cuerpo3{
+    width: 100%;
+    height: 700px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuadro1cuerpo3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1880px;
+    height: 95%;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
+
+.cuadro1cuerpo3 .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+.cuadro1cuerpo3 img {
+    width: 240px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.cuadro1cuerpo3 .texto-derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+
+.texto-derecha .titulo {
+    transform: translateX(-5%);
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.texto-derecha .descripcion {
+    transform: translateX(-5%);
+    font-size: 32px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+/*CELULAR*/
+@media (max-width: 671px) {
+/*TITULO*/
+    .sub1cuerpo0{
+        height: 90px;
+    }
+    .cuadro1cuerpo0 {
+        
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .cuadro1cuerpo0 p {
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+/*FECHA*/
+    .sub1cuerpo2{
+        height: 100px;
+    }
+    .date-group input{
+        border-radius: 5px;
+        width: 70px;
+        height: 25px; 
+    }
+    .date-group label {
+        font-size: 15px;
+    }
+    .search-button {
+        width: 70px;
+        height: 45px;
+        font-size: 13px;
+        border-radius: 10px;
+    }
+/*CUMPLEAÑOS*/
+    .sub1cuerpo3{
+        height: 300px;
+    }
+    .cuadro1cuerpo3 .image-grid {
+        gap: 5px;
+    }
+    .cuadro1cuerpo3 img {
+        width: 50px;
+        height: 80px;
+    }
+    .texto-derecha .titulo {
+        transform: translate(5%, 35%);
+        font-size: 2em;
+    }
+    
+    .texto-derecha .descripcion {
+        transform: translateX(5%);
+        font-size: 10px;
+    }
+
+
+}
+
+
+
+
+/*TALBLE*/
+@media (max-width: 1461px) and (min-width: 671px) {
+/*TITULO*/
+    .sub1cuerpo0{
+        height: 90px;
+    }
+    .cuadro1cuerpo0 {
+        
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+
+    .cuadro1cuerpo0 p {
+        font-size: 2.4em;
+        font-weight: bold;
+    }
+/*FECHA*/
+    .sub1cuerpo2{
+        height: 120px;
+    }
+    .date-group input{
+        border-radius: 5px;
+        width: 90%;
+        height: 30px; 
+    }
+    .date-group label {
+        font-size: 15px;
+    }
+    .search-button {
+        width: 100px;
+        height: 45px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+/*CUMPLEAÑOS*/
+    .sub1cuerpo3{
+        height: 400px;
+    }
+    .cuadro1cuerpo3 .image-grid {
+        gap: 10px;
+    }
+    .cuadro1cuerpo3 img {
+        width: 110px;
+        height: 80px;
+    }
+    .texto-derecha .titulo {
+        transform: translateX(-5%);
+        font-size: 3em;
+    }
+    
+    .texto-derecha .descripcion {
+        transform: translateX(-5%);
+        font-size: 15px;
+    }
+}

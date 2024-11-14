@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Danfo&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Nanum+Myeongjo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Satisfy&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+.pie{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.cuadro1pie1{
+    width: 100%;
+    height: 140px;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+.sub1pie1{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajustarpie1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+.imagenes img {
+    width: 50px;
+    height: auto;
+}
+
+.ajustarpie1 p {
+    margin-top: 10px;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
