@@ -108,7 +108,7 @@
     font-weight: bold;
     padding: 0;
     margin: 0;
-    font-size: 35px;
+    font-size: 45px;
     color: black;
 }
 /* Contenedor de los videos */
@@ -128,10 +128,6 @@
     max-width: 400px;        
     text-align: center;
   }
-  .txt1cuadro3cuerpo1, .txt2cuadro3cuerpo1{
-    color: black;
-    font-size: 20px;
-  }
   
 /* Estilo para cada video */
   .video {
@@ -147,7 +143,7 @@
   
 /* Estilo para el botón */
   .btnvideocuerpo1 {
-    transform: translateY(-27px);
+    transform: translateY(-17px);
     padding: 10px 20px;
     cursor: pointer;
     border: none;
@@ -417,14 +413,15 @@ label {
 /*VIDEO*/  
     .cuadro3cuerpo1 h2{
         transform: translateY(-20px);
-        font-size: 30px;
+        font-size: 40px;
     }
 
 
 /* Ajusta el tamaño del contenedor de los videos */
     .video-item {
-      transform: translateY(-50px);
+      transform: translateY(-55px);
       max-width: 450px; 
+      padding: 13px;
     }
     
     
@@ -579,6 +576,7 @@ label {
 
 /*VIDEO*/
     .video-item {
+    transform: translateY(-30px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -588,7 +586,7 @@ label {
   }
 
   .btnvideocuerpo1 {
-    transform: translateY(-40px);
+    transform: translateY(-80px);
     padding: 10px 20px;
     cursor: pointer;
     border: none;
