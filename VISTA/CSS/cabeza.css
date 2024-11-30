@@ -105,7 +105,7 @@
     .navbar-nav {
         border-radius: 20px;
         width: 100%;           
-        background: #0a4e5b!important;     
+        background: #065d73!important;     
         padding: 0;           
         margin: 0;           
     }
@@ -135,13 +135,14 @@
     }
     .navbar-nav .nav-item .nav-link:hover {
         border: 2px solid cadetblue;
-        color: black;
+        transition: 1s;
+        color: gray;
     }
     
 }
 @media (max-width: 1461px) and (min-width: 991px) {
     .bg-cyen{
-        background: teal;
+        background: #065d73!important;
     
     }
     
