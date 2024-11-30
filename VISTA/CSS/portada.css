@@ -34,8 +34,18 @@
 .cuadro1cuerpo1 img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    object-position: top;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black; /* Color de los círculos */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Círculos completamente redondos */
+    margin: 0 5px; /* Espaciado entre los círculos */
+}
+
+.carousel-indicators .active {
+    background-color: orange; /* Color del círculo activo */
 }
 
 .sub2cuerpo1 {
@@ -48,7 +58,7 @@
 .cuadro2cuerpo1{
     width: 1920px;
     height: 100%;
-    background: white;
+    background: #f4f4f4;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -56,20 +66,20 @@
 }
 
 .txt1sub2cuerpo1{
-    color: black;
+    color: #333333;
     font-size: 3em;
     font-weight: bold;
 }
 .txt2sub2cuerpo1{
     margin: 0 15px;
     font-size: 30px;
-    color: black;
+    color: #333333;
 }
 
 .sub3cuerpo1{
     width: 100%;
     height: 20px;
-    background: white;
+    background: #f4f4f4;
 }
 
 .sub4cuerpo1{
@@ -85,7 +95,7 @@
     max-width: 1920px;     
     height: 100%;
     max-height: 800px;      
-    background: #e7e7e7;
+    background: #e0f2f1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,14 +152,14 @@
     cursor: pointer;
     border: none;
     border-radius: 10px;
-    background-color: #05a79e;
+    background-color: #065d73;
     color: white;
     font-weight: bold;
     font-size: 20px;
   }
   .btnvideocuerpo1:hover{
     transition: 1s;
-    color: black;
+    background-color: #d65f5f;
   }
 
 .sub5cuerpo1{
@@ -164,7 +174,7 @@
     max-width: 1920px;     
     height: 100%;
     max-height: 800px;    
-    background: white;
+    background: #f4f4f4;
     position: relative; 
     display: flex;
     justify-content: center;
@@ -178,7 +188,7 @@
     max-width: 1200px;
     height: 80%;
     margin: auto;
-    background-color: white;
+    background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -260,7 +270,7 @@
 .sub6cuerpo1{
     width: 100%;
     height: 350px;
-    background: red;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +291,7 @@
 .cuadro1cuadro5cuerpo1 {
     width: 50%;
     height: 100%;
-    background: #393939;
+    background: #67808d;
     display: flex;
     flex-direction: column; 
     justify-content: center;
@@ -312,7 +322,7 @@
 .cuadro2cuadro5cuerpo1{
     width: 50%;
     height: 100%;
-    background: #393939;
+    background: #67808d;
     box-sizing: border-box;
 }
 
@@ -361,7 +371,7 @@ label {
     transform: translateY(-30px);
     width: 50%;
     height: 50px;
-    background-color: #4CAF50;
+    background-color: #065d73;
     color: white;
     border: none;
     border-radius: 5px;
@@ -373,8 +383,8 @@ label {
 }
 
 .submitcuadro2cuadro5cuerpo1:hover {
-    background-color: orange;
-    color: black;
+    background-color: #d65f5f;
+    transition: 1s;
 }
 
 

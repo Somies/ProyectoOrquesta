@@ -55,18 +55,28 @@
 
         <section class="sub1cuerpo1">
             <section class="cuadro1cuerpo1">
-                <div id="carouselExample" class="carousel slide">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                
+                    <!-- Contenido del carrusel -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="VISTA/IMG/PORTADA/img1.jpg" class="d-block w-100" alt="...">
+                            <img src="VISTA/IMG/PORTADA/img1.jpg" class="d-block w-100" alt="Imagen 1">
                         </div>
                         <div class="carousel-item">
-                        <img src="VISTA/IMG/PORTADA/img2.jpg" class="d-block w-100" alt="...">
+                            <img src="VISTA/IMG/PORTADA/img2.jpg" class="d-block w-100" alt="Imagen 2">
                         </div>
                         <div class="carousel-item">
-                        <img src="VISTA/IMG/PORTADA/img3.jpg" class="d-block w-100" alt="...">
+                            <img src="VISTA/IMG/PORTADA/img3.jpg" class="d-block w-100" alt="Imagen 3">
                         </div>
                     </div>
+                
+                    <!-- Controles de navegación -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -75,7 +85,7 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                    </div>
+                </div>
             </section>
         </section>
 
@@ -204,9 +214,9 @@
                     
                     <script>
                         document.getElementById("contactForm").addEventListener("submit", function(event) {
-                            event.preventDefault();  // Evita el envío predeterminado del formulario
+                            event.preventDefault();  
                     
-                            const formData = new FormData(this);  // Recoge los datos del formulario
+                            const formData = new FormData(this);  
                     
                             fetch("https://script.google.com/macros/s/AKfycbxnlqx9AZoIH9GI9GYoqYjxcnVeIU11ph-V6Q8oO38bGndgdsNSFHbKQI-oIQ_UDvutkg/exec", {
                                 method: "POST",
