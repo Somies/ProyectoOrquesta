@@ -154,8 +154,9 @@
     font-size: 20px;
   }
   .btnvideocuerpo1:hover{
-    transition: 1s;
+    transition: 0.4s;
     background-color: #d65f5f;
+    padding: 14px 24px;
   }
 
 .sub5cuerpo1{
@@ -202,11 +203,10 @@
 }
 
 .card-image {
-    width: 300px;
-    height: 180px;
-    border-radius: 6%;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 10px;
 }
 
 /* Estilo para el badge que se coloca debajo de la imagen */
@@ -221,10 +221,12 @@
     display: block; 
 }
 .container-comment-slider{
-    font-size: 2em;
+    font-size: 50px;
     font-weight: bold;
+    transform: translateY(-20px);
 }
 .card-title {
+    
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -361,12 +363,13 @@ label {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
 }
 
 .submitcuadro2cuadro5cuerpo1{
     transform: translateY(-30px);
-    width: 50%;
-    height: 50px;
+    width: 30%;
+    height: 40px;
     background-color: #065d73;
     color: white;
     border: none;
@@ -375,12 +378,15 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
     
 }
 
 .submitcuadro2cuadro5cuerpo1:hover {
     background-color: #d65f5f;
-    transition: 1s;
+    transition: 0.4s;
+    width: 53%;
+    height: 53px;
 }
 
 
@@ -458,6 +464,7 @@ label {
     .card-title {
     transform: translateY(-11px);
     font-size: 15px;
+    
     }
     .swiper-pagination .swiper-pagination-bullet {
         width: 10px;
@@ -468,6 +475,10 @@ label {
         flex-direction: column;
         gap: 10px;
     }
+    .card-item img, .card-image {
+        border-radius: 50%;
+    }
+    
 /*CONTACTOS*/
     .cuadro1cuadro5cuerpo1 img {
         width: 100%;
@@ -554,9 +565,9 @@ label {
     }
     
     .submitcuadro2cuadro5cuerpo1:hover {
-        transition: 1s;
-        color: black;
-        background: orange;
+        transition: 0.4s;
+        height: 36px;
+        width: 260px;
     }
     
     
@@ -594,7 +605,11 @@ label {
     background-color: #05a79e;
     color: white;
   }
-
+/*BANNER*/
+    .container-comment-slider{
+        font-size: 40px;
+        font-weight: bold;
+    }
 /*CONTACTOS*/
     .image-container {
         display: flex;
@@ -603,7 +618,6 @@ label {
     }
 
     .cuadro1cuadro5cuerpo1 img {
-        margin: 0 15px;
         width: 400px;
         height: 120px;
     }
@@ -612,12 +626,13 @@ label {
         justify-content: center;
         align-items: center;
         transform: translateX(-5px);
-        width: 350px;
+        width: 250px;
         height: 40px;
     }
     .submitcuadro2cuadro5cuerpo1:hover {
         transition: 1s;
-        color: black;
+        width: 350px;
+        height: 40px;
     }
     .messagecuadro2cuadro5cuerpo1 {
         height: 170px !important;
