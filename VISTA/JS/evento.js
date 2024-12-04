@@ -1,3 +1,4 @@
+/*MOVER EL SLEIDER O LOS ICONOS */
 document.addEventListener("DOMContentLoaded", function () {
     // Inicializar Swiper
     const swiper = new Swiper('.swiper-container', {
@@ -27,14 +28,27 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     });
-
+/*LLAMAR A SUS TARJETAS */
     // Agregar evento de clic a las imágenes
     document.querySelectorAll('.card-item').forEach((item) => {
         item.addEventListener('click', () => {
             const badge = item.querySelector('.badge').textContent;
-            if (badge === 'MATRIMONIO') {
+            if (badge === 'CUMPLEAÑOS') {
                 document.querySelector('.sub1cuerpo3').scrollIntoView({ behavior: 'smooth' });
+            }
+            if (badge === 'MATRIMONIO') {
+                document.querySelector('.sub2cuerpo3').scrollIntoView({ behavior: 'smooth' });
+            }
+            if (badge === 'PRESENTACIONES') {
+                document.querySelector('.sub3cuerpo3').scrollIntoView({ behavior: 'smooth' });
+            }
+            if (badge === '50 AÑOS') {
+                document.querySelector('.sub4cuerpo3').scrollIntoView({ behavior: 'smooth' });
+            }
+            if (badge === 'BIENVENIDAS') {
+                document.querySelector('.sub5cuerpo3').scrollIntoView({ behavior: 'smooth' });
             }
         });
     });
 });
+
