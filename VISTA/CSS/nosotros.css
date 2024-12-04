@@ -66,7 +66,7 @@
 
 /* Efecto al pasar el mouse sobre el cuadro principal */
 .cuadro1sub2cuerpo1:hover {
-    transform: scale(1.12); /* Agranda ligeramente el contenedor */
+    transform: scale(1.08); /* Agranda ligeramente el contenedor */
     
 }
 
@@ -200,27 +200,28 @@
         border-radius: 10px;
     }
 
+
 /*primero la imagen despues el texto*/
     .cuadro1sub2cuerpo1 .contenido .ttlo1 {
-        transform: translateX(9px);
-        font-size: 14px;
+        transform: translateX(1%);
+        font-size: 70%;
         
     }
 
     .cuadro1sub2cuerpo1 .contenido .ppfo1 {
         transform: translateX(0px);
-        font-size: 10px;
+        font-size: 50%;
     }
 
 /*primero el texto despues la imagen*/
     .cuadro1sub2cuerpo1 .contenido .ttlo2 {
-        transform: translateX(9px);
-        font-size: 14px;
+        transform: translateX(1%);
+        font-size: 70%;
     }
 
     .cuadro1sub2cuerpo1 .contenido .ppfo2 {
         transform: translateX(0px);
-        font-size: 10px;
+        font-size: 50%;
     }
 
 }
@@ -232,163 +233,69 @@
 
 
 /*TABLET*/
-@media (max-width: 1461px) and (min-width: 671px) {
-/*Titulo*/
-.sub1cuerpo1{
-    height: 50px;
-}
-.cuadro1sub1cuerpo1 p {
-    transform: translateY(30%);
-    font-size: 60px;
-    text-shadow: 
-        -3px -2px 0 black, 
-        3px -5px 0 black,  
-        -3px 2px 0 black,  
-        3px 2px 0 black;   
+@media (max-width: 1261px) and (min-width: 671px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
-    .cuadro1sub2cuerpo1{
-        width: 100%;
+/*titulo*/
+    .sub1cuerpo1{
+        height: 80px;
     }
-    .sub2cuerpo1, .sub2cuerpo2, .sub2cuerpo3{
+    .cuadro1sub1cuerpo1 p {
+        font-size: 60px;
+    }
+
+/*TARJETA 1*/
+/* Contenedor principal */
+    .sub2cuerpo1 {
         height: 400px;
     }
 
-/*Los2Cuadrosdelcuerpo1*/
-/*Cuadro1*/
-    .botones {
+/* Contenedor de la imagen y el contenido */
+    .cuadro1sub2cuerpo1 {
+        width: 80%;
+        height: 85%;
+    }
+
+/* Efecto al pasar el mouse sobre el cuadro principal */
+    .cuadro1sub2cuerpo1:hover {
+        transform: scale(1.15);
+    
+    }
+/* Imagen */
+    .cuadro1sub2cuerpo1 .imagen {
+        width: 30%;
+        border-radius: 10px;
+    }
+
+
+/*primero la imagen despues el texto*/
+    .cuadro1sub2cuerpo1 .contenido .ttlo1 {
+        transform: translateX(1%);
+        font-size: 140%;
         
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .botones button img{
-        width: 100%;
-        height: 100%;
-    }
-    .btncuadro1sub2cuerpo1 img {
-        transform: translateX(-50px);
-        width: 40%; 
-        height: auto;
-        border-radius: 20px;
     }
 
-    .botones button {
-        transform: translateX(50px);
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: none;
-    }
-/*Cuadro2*/
-    .titulo1txtcuadro2sub2cuerpo1{
-        margin: 5px 4px;
-        font-size: 40px;
-        transform: translateY(5%);
-    }
-    .titulo2txtcuadro2sub2cuerpo1{
-        margin: 0 15px;
-        font-size: 12px;
-    }
-
-
-    .txtcuadro2sub2cuerpo1 button {
-        transform: translateY(-80%);
-        width: 120px; 
-        height: 30px; 
-        font-size: 15px;
-    }
-
-/*Los2Cuadrosdelcuerpo2*/
-/*Cuadro1*/
-    .botones2 {
-            
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .botones2 button img{
-        width: 100%;
-        height: 100%;
-    }
-    .btncuadro1sub2cuerpo2 img {
-        transform: translateX(50px);
-        width: 40%;
-        height: auto;
-        border-radius: 20px;
-    }
-
-    .botones2 button {
-        transform: translateX(-50px);
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: none;
-    }
-    /*Cuadro2*/
-    .titulo1txtcuadro2sub2cuerpo2{
-        margin: 5px 4px;
-        font-size: 40px;
-        transform: translateY(5%);
-    }
-    .titulo2txtcuadro2sub2cuerpo2{
-        margin: 0 15px;
-        font-size: 12px;
-    }
-
-
-    .txtcuadro2sub2cuerpo2 button {
-        transform: translateY(-80%);
-        width: 120px; 
-        height: 30px;
-        font-size: 15px;
-    }
-/*Los2Cuadrosdelcuerpo3*/
-/*Cuadro1*/
-    .botones3 {
-            
-        display: flex;
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .botones3 button img{
-        width: 100%;
-        height: 100%;
-    }
-    .btncuadro1sub2cuerpo3 img {
-        transform: translateX(-50px);
-        width: 40%;
-        height: auto;
-        border-radius: 20px;
-    }
-
-    .botones3 button {
-        transform: translateX(50px);
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: none;
-    }
-    /*Cuadro2*/
-    .titulo1txtcuadro2sub2cuerpo3{
-        margin: 5px 4px;
-        font-size: 40px;
-        transform: translateY(5%);
-    }
-    .titulo2txtcuadro2sub2cuerpo3{
-        margin: 0 15px;
-        font-size: 12px;
-    }
-
-
-    .txtcuadro2sub2cuerpo3 button {
-        transform: translateY(-80%);
-        width: 120px;
-        height: 30px; 
-        font-size: 15px;
-    }
-
-
+.cuadro1sub2cuerpo1 .contenido .ppfo1 {
+    transform: translateX(0px);
+    font-size: 100%;
 }
+
+/*primero el texto despues la imagen*/
+.cuadro1sub2cuerpo1 .contenido .ttlo2 {
+    transform: translateX(1%);
+    font-size: 140%;
+}
+
+.cuadro1sub2cuerpo1 .contenido .ppfo2 {
+    transform: translateX(0px);
+    font-size: 100%;
+}
+}
+
+
 
 @keyframes fadeIn {
     from {

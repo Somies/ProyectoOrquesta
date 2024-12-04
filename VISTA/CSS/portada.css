@@ -457,26 +457,36 @@ label {
     }
 
 /*BANER*/
+    .sub5cuerpo1{
+        height: 440px;
+    }
     .container-comment-slider{
+        transform: translateY(-26px);
         font-size: 30px;
         font-weight: bold;
     }
     .card-title {
-    transform: translateY(-11px);
+    transform: translateY(-31px);
     font-size: 15px;
     
     }
     .swiper-pagination .swiper-pagination-bullet {
+        transform: translateY(10px);
         width: 10px;
         height: 10px;
     }
     .image-container {
+        
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
     .card-item img, .card-image {
+        transform: translateY(-31px);
         border-radius: 50%;
+    }
+    .badge {
+        transform: translateY(-30px);     
     }
     
 /*CONTACTOS*/
