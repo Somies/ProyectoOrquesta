@@ -20,7 +20,7 @@
     width: 100%;
     max-width: 1920px;
     height: 100%;
-    background: #f4f4f4;
+    background: #eaf2f8  ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,11 +44,8 @@
     width: 100%;
     max-width: 1920px;
     height: 100%;
-    background: #333333;
-    box-sizing: border-box;
-    overflow: hidden;
+    background: #d1e7ed;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .cuadro1cuerpo1 .testimonial-container {
@@ -66,12 +63,11 @@
 /* Ajustes para los botones de navegación */
 .cuadro1cuerpo1 .swiper-button-prev,
 .cuadro1cuerpo1 .swiper-button-next {
-    color: #fff;
+    color: black;
 }
 
 
 .cuadro1cuerpo1 .swiper-button-prev {
-
     left: 2%;
     transform: scale(1.5); /* Agranda el tamaño del botón */
 }
@@ -82,18 +78,11 @@
     transform: scale(1.5); /* Agranda el tamaño del botón */
 }
 
-.cuadro1cuerpo1 .swiper-pagination {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
 
 .cuadro1cuerpo1 .swiper-pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
-    background: #fff;
+    background: #035b61;
     opacity: 0.7;
     margin: 0 5px;
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -115,7 +104,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #444;
+    background: #edf7f9    ;
     padding: 20px;
     border-radius: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -123,8 +112,8 @@
 }
 
 .cuadro1cuerpo1 .card-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(1, 01, 1, 0.3);
 }
 
 .cuadro1cuerpo1 .card-image {
@@ -137,7 +126,7 @@
 }
 
 .card-item img:hover {
-    border-color: gold; /* Resalta al pasar el mouse */
+    border-color: rgb(28, 187, 192); /* Resalta al pasar el mouse */
 }
 
 .card-item p {
@@ -156,7 +145,7 @@
 .sub1cuerpo2{
     width: 100%;
     height: 230px;
-    background: #f4f4f4;
+    background: #eaf2f8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,7 +259,7 @@
 @media (max-width: 671px) {
 /*TITULO*/
     .sub1cuerpo0{
-        height: 90px;
+        height: 120px;
     }
     .cuadro1cuerpo0 {
         

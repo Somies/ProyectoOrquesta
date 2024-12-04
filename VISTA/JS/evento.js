@@ -12,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        autoplay: {
+            delay: 3000, // Tiempo en milisegundos entre transiciones (5 segundos)
+            disableOnInteraction: false, // Sigue reproduciendo después de interacción manual
+        },
         breakpoints: {
             668: {
                 slidesPerView: 2,
