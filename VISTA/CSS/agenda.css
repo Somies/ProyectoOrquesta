@@ -44,55 +44,93 @@
 .sub2cuadro1cuerpo1{
     width: 1920px;
     height: 100%;
-    background: #dce7eb ;
+    background: #dce7eb;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/*contenido*/
-.contenidosub2cuadro1cuerpo1{
+
+/* Contenedor interno */
+.contenidosub2cuadro1cuerpo1 {
     width: 80%;
-    height: 80%;
-    background: #f1e1c6 ;
+    height: 70%;
+    background: linear-gradient(145deg, #f1e1c6, #e6d1b3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+/* Encabezado del calendario */
+.calendar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.1);
-    border-radius: 30px;
 }
 
-
-.navigation-left {
+/* Botones de navegación */
+.navigation-left, .navigation-right {
     display: flex;
-    gap: 10px;
+    gap: 15px; /* Separación entre botones */
 }
 
 .nav-btn {
+    background: #f9f9f9;
     border: none;
-    background-color: #037c8c;
-    color: white;
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: #126e82;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .nav-btn:hover {
-    background-color: #06a7b9;
+    background: #126e82;
     color: white;
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
 }
 
+.nav-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Fecha centrada */
 .month-year {
-    transform: translateX(-580px);
-    font-size: 60px;
+    flex-grow: 1; /* Ocupa el espacio necesario para centrar */
+    text-align: center;
+}
+/* Estilo básico del texto */
+.loading {
+    font-size: 24px;
     font-weight: bold;
-    color: #333333 ;
+    color: #555;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Animación para los puntos */
+.dots::after {
+    content: " ";
+    display: inline-block;
+    animation: dotsAnimation 1.5s infinite;
+}
+
+
+#month-year-span {
+    font-size: 62px; /* Tamaño medio grande */
+    font-weight: bold;
+    color: #126e82;
+    text-transform: uppercase;
 }
 /*cuadro de los dias (calendario)*/
 .sub3cuerpo1{
@@ -145,51 +183,189 @@
     font-size: 30px;
     
 }
+/*animacion (?)*/
+.question {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #444;
+    animation: jumpAnimation 1s infinite; /* Llamar a la animación */
+}
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-    .sub1cuerpo1 {
-        height: 60px;
+/*CELULAR*/
+@media (max-width: 671px) {
+    .sub1cuerpo1{
+        height: 80px;
     }
-    .sub1cuadro1cuerpo1 p {
-        font-size: 18px;
+
+/*titulo*/
+    .sub1cuadro1cuerpo1 p{
+        transform: translateY(20px);
+        font-size: 40px;
     }
-    .sub2cuerpo1 {
+    
+/*cuadro del mes y año (calendario)*/
+    .sub2cuerpo1{
         height: 100px;
     }
+
+/* Contenedor interno */
+    .contenidosub2cuadro1cuerpo1 {
+        width: 90%;
+        height: 40%;
+        padding: 1px;
+        border-radius: 10px;
+    }
+    
     .nav-btn {
-        font-size: 12px;
-        padding: 6px 10px;
+        padding: 6px 2px;
+        font-size: 6px;
     }
-    .month-year {
-        font-size: 16px;
+    
+    .nav-btn:hover {
+        transform: scale(1.2);
     }
+
+    
+    #month-year-span {
+        font-size: 13px;
+    }
+/*cuadro de los dias (calendario)*/
+    .sub3cuerpo1{
+        height: 400px;
+    }
+
+/*contenido*/
+    .contenidosub3cuadro1cuerpo1 {
+        padding: 5px;
+        border-radius: 15px;
+    }
+    
+    .calendar-table {
+        width: 95%;
+    }
+    
     .calendar-table th,
     .calendar-table td {
-        height: 50px;
-        font-size: 12px;
+        border: 4px solid #f0f8ff;
+        height: 45px;
+    }
+    
+    
+    .calendar-table th {
+        font-size: 7px;
+        
+    }
+    /*animacion (?)*/
+    .question {
+        font-size: 22px;
     }
 }
 
-@media (max-width: 480px) {
-    .navigation-left {
-        gap: 3px;
+/*TABLET*/
+@media (max-width: 1261px) and (min-width: 671px) {
+    .sub1cuerpo1{
+        height: 120px;
     }
+
+/*titulo*/
+    .sub1cuadro1cuerpo1 p{
+        transform: translateY(30px);
+        font-size: 60px;
+    }
+    
+/*cuadro del mes y año (calendario)*/
+    .sub2cuerpo1{
+        height: 150px;
+    }
+
+/* Contenedor interno */
+    .contenidosub2cuadro1cuerpo1 {
+        width: 90%;
+        height: 40%;
+        padding: 1px;
+        border-radius: 10px;
+    }
+    
     .nav-btn {
-        font-size: 10px;
-        padding: 5px 8px;
+        padding: 9px 12px;
+        font-size: 12px;
     }
-    .month-year {
+    
+    .nav-btn:hover {
+        transform: scale(1.1);
+    }
+
+    
+    #month-year-span {
+        font-size: 24px;
+    }
+/*cuadro de los dias (calendario)*/
+    .sub3cuerpo1{
+        height: 800px;
+    }
+
+/*contenido*/
+    .contenidosub3cuadro1cuerpo1 {
+        padding: 5px;
+        border-radius: 15px;
+    }
+    
+    .calendar-table {
+        width: 95%;
+    }
+    
+    .calendar-table th,
+    .calendar-table td {
+        border: 7px solid #f0f8ff;
+        height: 95px;
+    }
+    
+    
+    .calendar-table th {
         font-size: 14px;
+        
     }
-    .calendar-table th,
-    .calendar-table td {
-        height: 40px;
-        font-size: 10px;
+    /*animacion (?)*/
+    .question {
+        font-size: 27px;
     }
 }
 
 
 
 
+
+
+
+
+
+/*animacion del cargando...*/
+@keyframes dotsAnimation {
+    0% { content: ""; }
+    33% { content: "."; }
+    66% { content: ".."; }
+    100% { content: "..."; }
+}
+
+
+/* Animación de salto para el signo de interrogación */
+@keyframes jumpAnimation {
+    0% {
+        transform: translateY(0); /* Empieza en su posición normal */
+    }
+    25% {
+        transform: translateY(-10px); /* Subir ligeramente */
+    }
+    50% {
+        transform: translateY(0); /* Volver a la posición original */
+    }
+    75% {
+        transform: translateY(-5px); /* Subir un poco menos */
+    }
+    100% {
+        transform: translateY(0); /* Termina en la posición original */
+    }
+}
 

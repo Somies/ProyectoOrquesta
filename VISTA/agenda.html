@@ -62,18 +62,27 @@
         <section class="sub2cuerpo1">
             <section class="sub2cuadro1cuerpo1">
                 <div class="contenidosub2cuadro1cuerpo1">
-                    
-                    <div class="navigation-left">
-                        <button class="nav-btn" onclick="changeYear(-1)"><<</button>
-                        <button class="nav-btn" onclick="changeMonth(-1)">&lt;</button>
-                        <button class="nav-btn" onclick="changeMonth(1)">&gt;</button>
-                        <button class="nav-btn" onclick="changeYear(1)">>></button>
+                    <div class="calendar-header">
+                        <!-- Botones a la izquierda -->
+                        <div class="navigation-left">
+                            <button class="nav-btn" onclick="changeYear(-1)">Año Anterior</button>
+                            <button class="nav-btn" onclick="changeMonth(-1)">Mes Anterior</button>
+                        </div>
+                
+                        <!-- Fecha centrada -->
+                        <div class="month-year">
+                            <span id="month-year-span" class="loading">Cargando<span class="dots"></span></span>
+                        </div>
+                        
+                
+                        <!-- Botones a la derecha -->
+                        <div class="navigation-right">
+                            <button class="nav-btn" onclick="changeMonth(1)">Mes Siguiente</button>
+                            <button class="nav-btn" onclick="changeYear(1)">Año Siguiente</button>
+                        </div>
                     </div>
-                    <div class="month-year">
-                        <span id="month-year-span">JULIO - 2024</span>
-                    </div>
-                     
                 </div>
+                
             </section>
         </section>
 
@@ -94,7 +103,51 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Las filas se generarán dinámicamente -->
+                            <tr>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                            </tr>
+                            <tr>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                            </tr>
+                            <tr>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                            </tr>
+                            <tr>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                            </tr>
+                            <tr>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                                <td class="question">?</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

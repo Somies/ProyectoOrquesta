@@ -1,7 +1,7 @@
-// Definir el mes y el año inicial
+// Inicializar la fecha en diciembre del año actual
 let currentDate = new Date();
-currentDate.setFullYear(2024); // Establece el año inicial en 2024
-currentDate.setMonth(6); // Establece el mes a Julio (mes 6, porque los índices comienzan desde 0)
+currentDate.setFullYear(new Date().getFullYear()); // Año actual
+currentDate.setMonth(11); // Mes de diciembre (índice 11)
 
 // Array de nombres de los meses
 let months = [
@@ -22,23 +22,17 @@ function changeMonth(change) {
     let newMonth = currentDate.getMonth() + change;
     let newYear = currentDate.getFullYear();
 
-    // Verificar si el nuevo mes es válido dentro del rango de años 2022-2024
+    // Verificar si el nuevo mes es válido dentro del rango de años 2022-2025
     if (newMonth > 11) {
         newMonth = 0; // Volver a enero
-        if (newYear < 2025) {
-            newYear++; // Avanzar el año solo si está por debajo de 2024
-        }
+        newYear++; // Avanzar al siguiente año
     } else if (newMonth < 0) {
         newMonth = 11; // Volver a diciembre
-        if (newYear > 2022) {
-            newYear--; // Retroceder el año solo si está por encima de 2022
-        }
+        newYear--; // Retroceder al año anterior
     }
 
-    // Establecer el nuevo mes y año
     currentDate.setMonth(newMonth);
     currentDate.setFullYear(newYear);
-
     updateMonthYear();
 }
 
@@ -46,7 +40,7 @@ function changeMonth(change) {
 function changeYear(change) {
     let newYear = currentDate.getFullYear() + change;
 
-    // Verificar si el año está dentro del rango permitido (2022-2024)
+    // Verificar si el año está dentro del rango permitido
     if (newYear >= 2022 && newYear <= 2025) {
         currentDate.setFullYear(newYear);
     }
@@ -72,30 +66,25 @@ function generateCalendar() {
     const adjustedFirstDay = (firstDay === 0 ? 6 : firstDay - 1);
 
     let currentDay = 1;
-    let row;
 
     // Crear filas del calendario
-    for (let i = 0; i < 6; i++) { // Máximo 6 filas en un calendario
-        row = document.createElement("tr");
+    for (let i = 0; i < 6; i++) {
+        const row = document.createElement("tr");
 
-        for (let j = 0; j < 7; j++) { // 7 columnas para los días de la semana
+        for (let j = 0; j < 7; j++) {
             const cell = document.createElement("td");
 
-            // Solo llenar las celdas correspondientes a los días del mes
             if (i === 0 && j < adjustedFirstDay) {
-                // Celdas vacías antes del primer día
-                cell.textContent = "";
+                cell.textContent = ""; // Celdas vacías antes del primer día
             } else if (currentDay > daysInMonth) {
-                // Celdas vacías después del último día
-                cell.textContent = "";
+                cell.textContent = ""; // Celdas vacías después del último día
             } else {
-                // Día del mes
                 cell.textContent = currentDay;
 
                 // Cambiar fondo de color rojo y texto blanco para el domingo 1 de septiembre de 2024
-                if (currentDay === 1 && year === 2024 && month === 8 && j === 6) { // Verifica si es Domingo 1 de Septiembre
-                    cell.style.backgroundColor = "red"; // Fondo rojo
-                    cell.style.color = "white"; // Texto blanco
+                if (currentDay === 1 && year === 2024 && month === 8 && j === 6) {
+                    cell.style.backgroundColor = "red";
+                    cell.style.color = "white";
                 }
 
                 currentDay++;
@@ -106,16 +95,9 @@ function generateCalendar() {
 
         calendarBody.appendChild(row);
 
-        // Salir del bucle si todos los días han sido colocados
-        if (currentDay > daysInMonth) {
-            break;
-        }
+        if (currentDay > daysInMonth) break; // Salir del bucle si se llenaron los días
     }
 }
 
-
-
-
-
-// Inicializar el mes, año y calendario cuando se carga la página
+// Inicializar el calendario y encabezado al cargar la página
 updateMonthYear();
