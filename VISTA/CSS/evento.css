@@ -144,61 +144,112 @@
 /*fecha*/
 .sub1cuerpo2{
     width: 100%;
-    height: 230px;
+    height: 430px;
     background: #eaf2f8;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/* Fondo de la sección */
 .cuadro1cuerpo2 {
     width: 100%;
     max-width: 1920px;
-    height: 70%;
-    background: #f1e1c6;
+    height: 40%;
+    background: #f1e1c6; /* Fondo claro */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-}
-.date-group {
-    display: flex;
-    flex-direction: column;
-}
-.date-group input{
-    border: none;
-    border-radius: 10px;
-    width: 230px;
-    height: 60px;
-}
-
-.date-group label {
-    font-size: 30px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-#month::placeholder {
-    font-size: 24px; /* Tamaño del texto */
-}
-#month {
-    font-size: 30px;
-}
-#year::placeholder {
-    font-size: 24px; /* Tamaño del texto */
-}
-#year {
-    font-size: 30px;
-}
-.search-button {
-    width: 230px;
-    height: 60px;
-    padding: 5px 15px;
-    font-size: 26px;
-    cursor: pointer;
-    background-color: #007bff;
+  }
+  
+  /* Anuncio */
+  .anuncio {
+    text-align: center;
+    padding: 40px 50px;
+    background: linear-gradient(45deg, #065d73, #05839e);
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 650px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Estilo del título */
+  .titulo {
+    font-size: 2.8em;
     color: white;
-    border: none;
-    border-radius: 10px;
-}
-
+    margin-bottom: 15px;
+    animation: bounceInfinite 2s infinite ease-in-out;
+  }
+  
+  /* Estilo del mensaje */
+  .mensaje {
+    font-size: 1.4em;
+    color: #d5e1e8;
+    margin-bottom: 25px;
+    animation: fadeInMessage 1.5s ease-out 0.5s forwards;
+  }
+  
+  /* Estilo del botón */
+  .boton {
+    font-size: 1.5em;
+    color: white;
+    background-color: #ff5733;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  /* Efecto de hover para el botón */
+  .boton:hover {
+    background-color: #c7452d;
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efecto de onda en el botón */
+  .boton::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: width 0.5s, height 0.5s;
+  }
+  
+  .boton:hover::before {
+    width: 0;
+    height: 0;
+  }
+  
+  /* Animación del título: agrandarse y volver al tamaño original */
+  @keyframes bounceInfinite {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  
+  /* Animación para que el mensaje aparezca después del título */
+  @keyframes fadeInMessage {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
 /* Matrimonio */
 
 /* Contenedor principal */
@@ -374,34 +425,40 @@
     }
 /*FECHA*/
     .sub1cuerpo2{
-        height: 100px;
+        height: 300px;
     }
-    .date-group input{
-        border-radius: 5px;
-        width: 70px;
-        height: 25px; 
+    .cuadro1cuerpo2 {
+        transform: translateY(40px);
+        height: 30%;
     }
-    .date-group label {
-        font-size: 15px;
+      
+/* Anuncio */
+    .anuncio {
+        padding: 30px 30px;
+        border-radius: 40px;
     }
-    .search-button {
-        width: 70px;
-        height: 45px;
-        font-size: 13px;
-        border-radius: 10px;
+      
+/* Estilo del título */
+    .titulo {
+        font-size: 25px;
     }
-    #month::placeholder {
-        font-size: 15px; /* Tamaño del texto */
+      
+/* Estilo del mensaje */
+    .mensaje {
+        font-size: 17px;
     }
-    #month {
-        font-size: 15px;
+      
+/* Estilo del botón */
+    .boton {
+        font-size: 20px;
     }
-    #year::placeholder {
-        font-size: 15px; /* Tamaño del texto */
+      
+/* Efecto de hover para el botón */
+    .boton:hover {
+        transform: scale(1.2);
     }
-    #year {
-        font-size: 15px;
-    }
+
+
 /*CUMPLEAÑOS*/
     .cuadro1cuerpo3 {
         flex-direction: column;
@@ -450,36 +507,42 @@
     }
 /*FECHA*/
     .sub1cuerpo2{
-        height: 120px;
+        height: 400px;
     }
-    .date-group input{
-        border-radius: 5px;
-        width: 150px;
-        height: 30px; 
+    .cuadro1cuerpo2 {
+        height: 30%;
     }
-    .date-group label {
+      
+/* Anuncio */
+    .anuncio {
+        padding: 30px 30px;
+        border-radius: 40px;
+        
+        width: 80%;
+        max-width: 450px;
+    }
+      
+/* Estilo del título */
+    .titulo {
+        font-size: 30px;
+    }
+      
+/* Estilo del mensaje */
+    .mensaje {
+        font-size: 20px;
+    }
+      
+/* Estilo del botón */
+    .boton {
         font-size: 25px;
     }
-    .search-button {
-        width: 100px;
-        height: 45px;
-        font-size: 15px;
-        border-radius: 10px;
-    }
-    #month::placeholder {
-        font-size: 17px; /* Tamaño del texto */
-    }
-    #month{
-        font-size: 17px; /* Tamaño del texto */
-    }
-    #year::placeholder {
-        font-size: 17px; /* Tamaño del texto */
-    }  
-    #year{
-        font-size: 17px; /* Tamaño del texto */
+      
+/* Efecto de hover para el botón */
+    .boton:hover {
+        transform: scale(1.2);
     }
 
-
+    
 /*CUMPLEAÑOS*/
     .sub1cuerpo3{
         height: 450px;

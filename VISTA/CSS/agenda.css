@@ -336,7 +336,36 @@
     }
 }
 
+@media (max-width: 1461px) and (min-width: 1261px) {
+    /*titulo*/
+    .sub1cuadro1cuerpo1 p{
+        transform: translateY(30px);
+        font-size: 80px;
+    }
+    
 
+/* Contenedor interno */
+    .contenidosub2cuadro1cuerpo1 {
+        width: 90%;
+        height: 40%;
+        padding: 1px;
+        border-radius: 10px;
+    }
+    
+    .nav-btn {
+        padding: 9px 12px;
+        font-size: 17px;
+    }
+    
+    .nav-btn:hover {
+        transform: scale(1.1);
+    }
+
+    
+    #month-year-span {
+        font-size: 44px;
+    }
+}
 
 
 

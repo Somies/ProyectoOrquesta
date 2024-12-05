@@ -89,7 +89,7 @@
 
 
 /* Mantener todo centrado en dispositivos pequeños */
-@media (max-width:  991px) {
+@media (max-width:  670px) {
 
 /* Barra de navegación en la parte superior, sin superponer el contenido */
     .navbar {
@@ -140,7 +140,22 @@
     }
     
 }
-@media (max-width: 1461px) and (min-width: 991px) {
+@media (max-width: 991px) and (min-width: 671px) {
+    .navbar {
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; 
+        background-color: red; 
+    }
+    .navbar-nav {
+        border-radius: 20px;
+        width: 100%;           
+        background: #065d73!important;     
+        padding: 0;           
+        margin: 0;           
+    }
     .bg-cyen{
         background: #065d73!important;
     
@@ -152,6 +167,32 @@
     }
     .txtcuadro1cabeza1{
         transform: translateY(10px);
-        font-size: 40px;
+        font-size: 50px;
     } 
+    .navbar-nav .nav-item .nav-link {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 1461px) and (min-width: 992px) {
+    /* Ajuste de la altura de la barra de navegación en dispositivos móviles */
+    .subcabeza1 {
+        height: 120px;
+    }
+    .txtcuadro1cabeza1{
+        transform: translateY(10px);
+        font-size: 30px;
+    } 
+    .navbar-nav .nav-item .nav-link {
+        margin: 1px;
+        border-radius: 20px;
+        font-size: 30px;
+        color: white;
+        transition: color 0.3s ease;
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+        white-space: nowrap;
+    }
 }
