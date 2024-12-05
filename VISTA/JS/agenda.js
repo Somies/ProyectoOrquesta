@@ -22,19 +22,30 @@ function changeMonth(change) {
     let newMonth = currentDate.getMonth() + change;
     let newYear = currentDate.getFullYear();
 
-    // Verificar si el nuevo mes es válido dentro del rango de años 2022-2025
+    // Si el mes excede diciembre (11), avanzamos al siguiente año
     if (newMonth > 11) {
-        newMonth = 0; // Volver a enero
-        newYear++; // Avanzar al siguiente año
-    } else if (newMonth < 0) {
-        newMonth = 11; // Volver a diciembre
-        newYear--; // Retroceder al año anterior
+        newMonth = 0; // Enero
+        // Asegurarnos de que no avancemos el año más allá de 2025
+        if (newYear < 2025) {
+            newYear++; // Incrementar el año solo si está por debajo de 2025
+        }
+    } 
+    // Si el mes es menor a enero (0), retrocedemos al año anterior
+    else if (newMonth < 0) {
+        newMonth = 11; // Diciembre
+        // Asegurarnos de que no retrocedamos más allá de 2022
+        if (newYear > 2022) {
+            newYear--; // Decrementar el año solo si está por encima de 2022
+        }
     }
 
+    // Establecer el nuevo mes y año
     currentDate.setMonth(newMonth);
     currentDate.setFullYear(newYear);
+
     updateMonthYear();
 }
+
 
 // Función para cambiar el año con límites
 function changeYear(change) {

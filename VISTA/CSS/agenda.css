@@ -219,6 +219,7 @@
     }
     
     .nav-btn {
+        
         padding: 6px 2px;
         font-size: 6px;
     }
@@ -229,8 +230,10 @@
 
     
     #month-year-span {
-        font-size: 13px;
+        font-size: 12px;
+        
     }
+    
 /*cuadro de los dias (calendario)*/
     .sub3cuerpo1{
         height: 400px;
@@ -266,7 +269,7 @@
 /*TABLET*/
 @media (max-width: 1261px) and (min-width: 671px) {
     .sub1cuerpo1{
-        height: 120px;
+        height: 80px;
     }
 
 /*titulo*/
@@ -277,7 +280,7 @@
     
 /*cuadro del mes y año (calendario)*/
     .sub2cuerpo1{
-        height: 150px;
+        height: 250px;
     }
 
 /* Contenedor interno */
