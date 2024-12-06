@@ -390,7 +390,37 @@ label {
 }
 
 
-
+/* Botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde el lado derecho */
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .whatsapp-button a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+  }
+  
+  .whatsapp-button img {
+    width: 60%;
+    height: 60%;
+    margin: 20%; /* Centra el ícono dentro del botón */
+  }
+   
 
   /* Estilos responsivos para pantallas pequeñas */
   @media (max-width: 671px) {
